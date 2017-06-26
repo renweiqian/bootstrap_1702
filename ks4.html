@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var txt="";
+                txt+="Width of div: " + $("div").width() + "</br>";
+                txt+="Height of div: " + $("div").height();
+                $("div").html(txt);
+            });
+        });
+        $(document).ready(function(){
+            $("button").click(function(){
+                var txt="";
+                txt+="Width of div: " + $("p").width() + "</br>";
+                txt+="Height of div: " + $("p").height();
+                $("p").html(txt);
+            });
+        });
+
+    </script>
+</head>
+<body>
+<p> jQuery Exercises</p>
+<div style="height:75px;width:200px;padding:10px;
+margin:3px;border:1px solid blue;background-color:#81DAF5;">
+
+</div>
+<button>显示窗口的尺寸</button>
+
+</body>
+</html>
